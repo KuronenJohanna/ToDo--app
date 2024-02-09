@@ -1,0 +1,168 @@
+/* Tehtävälista, React-app 2024*/
+/*Johanna Kuronen 2024*/
+
+/*
+  Checkbox styles adapted from https://alvarotrigo.com/blog/css-checkbox-styles/
+*/  
+
+body {
+  font-family: 'Playfair Display', serif;
+  margin: 10px;
+}
+
+.flex-container {
+  background-color: #FFE7E7;
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  padding: 10px;
+  width: 390px;
+  height: 844px;
+  border: 2px solid #000;
+  
+
+
+}
+.upperCase    {
+
+  border-radius: 27px;
+  display:flex;
+  flex-direction: row;
+  position: relative;
+  
+}
+
+h1 {
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+  font-size: 60px;
+  z-index: 9999;
+}
+
+.memo-icon {
+  width: 150px;
+  height: auto;
+  position: absolute;
+  right: 15px;
+  float: right;
+  transform: rotate(10deg);
+  padding: 5px
+}
+
+.task-input {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+  border-radius: 27px;
+  border: 1px solid #000;
+  width: 100%;
+  padding: 12px 20px;
+  box-sizing: border-box;
+
+}
+
+.add-button {
+  display: inline-block;
+  padding: 15px;
+  margin: 10px;
+  font-size: 20px;
+  font-family: 'Playfair Display', serif;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  background-color: #F7B787;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+.task-div {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin: 8px; 
+  padding: 10px;
+  width: 351px;
+  height: 626px;
+  border-radius: 27px;
+  background: #F5F5F5;
+  border: 1px solid #000;
+  position: relative;
+  font-size: 20px;
+  
+}
+
+.newTask {
+  display: grid;
+  grid-template-columns: 25px auto 25px;
+  column-gap: 10px;
+  align-items: center
+
+  
+}
+.newTask > div {
+  display: flex;
+  text-align: left;
+  padding: 5px 0;
+  font-size: 18px;
+  max-width: 100%;
+  align-items: center
+}
+
+.label {
+  display: flex;
+}
+
+.delete-btn {
+  display: none; 
+  border: 0;
+  background: none;
+}
+
+.newTask:hover .delete-btn {
+  display: block;
+
+}
+.trash-icon {
+  cursor: pointer;
+  width: 20px;
+  height: auto;
+  display:block;
+
+}
+
+
+
+.parent-element > .whenIsdone {
+  position: absolute;
+  bottom: 0;
+
+  
+}
+
+.whenIsdone {
+  font-size: 9px;
+  
+}
+
+.check {
+  width:25px;
+  height:25px;
+  position:absolute;
+  opacity:0;
+}
+
+.path1{
+  stroke-dasharray:400;
+  stroke-dashoffset:400;
+  transition:.4s all;
+}
+.path2{
+  stroke-dasharray:1800;
+  stroke-dashoffset:1800;
+  transition:.5s all;
+}
+.check:checked + label svg g path {
+  stroke-dashoffset:0;
+}
+
+
+
